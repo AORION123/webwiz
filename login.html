@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // Wait for document to load
+        document.addEventListener("DOMContentLoaded", function(event) {
+          document.documentElement.setAttribute("data-theme", "light");
+      
+          // Get our button switcher
+          var themeSwitcher = document.getElementById("theme-switcher");
+      
+          // When our button gets clicked
+          themeSwitcher.onclick = function() {
+            // Get the current selected theme, on the first run
+            // it should be `light`
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+      
+            // Switch between `dark` and `light`
+            var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+      
+            // Set our currenet theme to the new one
+            document.documentElement.setAttribute("data-theme", switchToTheme);
+          }
+        });
+      </script>
+    <style>
+       body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+[data-theme="dark"] {
+  --background-color: #0c0b0b;
+  --text-color: #fff;
+}
+         .navbar{
+height: 100px; 
+background-color: skyblue;
+display: flex;
+justify-content: space-between; 
+
+padding: 10px 100px;
+}
+
+#navlinks {
+display: flex;
+align-items: center;
+}
+#navlinks ul {
+display: flex;
+list-style-type: none;
+}
+.nav-btn {
+margin: 10px;
+}
+.nav-btn a {
+text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <title>Document</title>
+</body>
+<body>
+    <button id="theme-switcher">Switch themes!</button>
+</body>
+</html>

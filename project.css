@@ -1,0 +1,54 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-image: url(https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80); 
+    background-size: cover;
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  x
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background:yellow;  
+        border-radius: 15px ;  
+          
+}  
+h1{  
+    text-align: center;  
+    color: skyblue;  
+    padding: 20px;  
+}  
+
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border:navy;  
+    border-radius: 8px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 8px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+  
+  
+}  
+  
+a{  
+    float: right;  
+    background-color: grey;  
+} 
